@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_linear_padrao"
+    tools:context=".controlador.Menu_Cadastrar">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="serif"
+        android:text="O que você gostaria de cadastrar?"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="410dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnCadCli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_cliente_100"
+            android:fontFamily="serif"
+            android:text="Cliente"
+            android:textColor="@color/verdeprincipal" />
+
+        <Button
+            android:id="@+id/btnCadCons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_consultor_100"
+            android:fontFamily="serif"
+            android:text="Consultor"
+            android:textColor="@color/verdeprincipal" />
+
+        <Button
+            android:id="@+id/btnCadAgenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_agenda_100"
+            android:fontFamily="serif"
+            android:text="Agenda"
+            android:textColor="@color/verdeprincipal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="411dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/btnCadServ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_servico_100"
+            android:fontFamily="serif"
+            android:text="Servico"
+            android:textColor="@color/verdeprincipal" />
+
+        <Button
+            android:id="@+id/btnCadAtvi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableBottom="@drawable/ic_atividade_100"
+            android:fontFamily="serif"
+            android:text="Atividade"
+            android:textColor="@color/verdeprincipal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVoltarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_voltar_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
