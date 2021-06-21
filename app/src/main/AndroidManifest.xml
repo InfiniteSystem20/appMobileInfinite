@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.infinitesystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InfiniteSystem">
+        <activity android:name=".controlador.cadastro_agenda"></activity>
+        <activity android:name=".controlador.cadastro_atividade" />
+        <activity android:name=".controlador.cadastro_servico" />
+        <activity android:name=".controlador.cadastro_consultor" />
+        <activity android:name=".controlador.cadastro_cliente" />
+        <activity android:name=".controlador.Menu_Cadastrar" />
+        <activity android:name=".controlador.Sobre" />
+        <activity android:name=".controlador.MainActivity" />
+        <activity android:name=".controlador.Login" />
+        <activity android:name=".controlador.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
