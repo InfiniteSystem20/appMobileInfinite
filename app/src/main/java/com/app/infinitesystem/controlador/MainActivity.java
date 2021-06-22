@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btnSobre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaSobre = new Intent(getApplicationContext(), Sobre.class);
+                Intent telaSobre = new Intent(getApplicationContext(), SobreActivity.class);
                 finish();
                 startActivity(telaSobre);
             }
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         buttonCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaCadastrar = new Intent(getApplicationContext(), Menu_Cadastrar.class);
+                Intent telaCadastrar = new Intent(getApplicationContext(), MenuCadActivity.class);
                 startActivity(telaCadastrar);
             }
         });

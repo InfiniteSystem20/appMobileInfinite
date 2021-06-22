@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_fundo_form"
-    tools:context=".controlador.cadastro_agenda">
+    tools:context=".controlador.CadAgendaActivity">
 
     <Button
         android:id="@+id/btnVoltarMenuCad5"

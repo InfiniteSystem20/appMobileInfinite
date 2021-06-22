@@ -9,23 +9,22 @@ import android.widget.Button;
 
 import com.app.infinitesystem.R;
 
-public class Sobre extends AppCompatActivity {
+public class CadConsultorActivity extends AppCompatActivity {
 
-    Button btnHome;
+    Button btnVoltarMenuCad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sobre);
+        setContentView(R.layout.activity_cadastro_consultor);
 
-        btnHome = findViewById(R.id.btnHome2);
+        btnVoltarMenuCad = findViewById(R.id.btnVoltarMenuCad2);
 
-        //Evento para acessar tela home
-        btnHome.setOnClickListener(new View.OnClickListener() {
+        btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaHome = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(telaHome);
+                Intent voltarMenu = new Intent( getApplicationContext(), MenuCadActivity.class);
+                startActivity(voltarMenu);
             }
         });
     }

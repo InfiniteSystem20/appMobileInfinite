@@ -9,24 +9,25 @@ import android.widget.Button;
 
 import com.app.infinitesystem.R;
 
-public class cadastro_cliente extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
-    Button btnVoltarMenuCad;
+    Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_cliente);
+        setContentView(R.layout.activity_login);
 
-        btnVoltarMenuCad = findViewById(R.id.btnVoltarMenuCad2);
+        btnLogin = findViewById(R.id.btnLogin);
 
-        btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voltarMenu = new Intent( getApplicationContext(),Menu_Cadastrar.class);
-                startActivity(voltarMenu);
+                Intent telaMenu = new Intent(getApplicationContext(),MainActivity.class);
+               startActivity(telaMenu);
             }
         });
-
     }
+
+
 }
