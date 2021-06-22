@@ -20,6 +20,10 @@ public class Conexao extends SQLiteOpenHelper {
         db.execSQL("create table cliente(id integer primary key autoincrement, "
                 + "nomeCliente varchar(50), emailCliente varchar(50), telefoneCliente varchar(50))");
 
+        db.execSQL("create table servico(idServ integer primary key autoincrement, "
+                +"tipoServ varchar(50), nomeServ varchar(50), descricaoServ varchar(700))");
+
+
     }
 
     @Override

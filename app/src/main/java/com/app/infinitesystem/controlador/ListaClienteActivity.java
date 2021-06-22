@@ -37,17 +37,4 @@ public class ListaClienteActivity extends AppCompatActivity {
         listView.setAdapter(adaptador);
     }
 
-    @Override
-    public void onResume(){
-        super.onResume();
-        clientes = dao.obterTodos();
-        clientesFiltrados.clear();
-        clientesFiltrados.addAll(clientes);
-        listView.invalidateViews();
-    }
-
-
-
-
-
 }
