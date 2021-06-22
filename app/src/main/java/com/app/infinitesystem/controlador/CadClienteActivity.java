@@ -50,7 +50,10 @@ public class CadClienteActivity extends AppCompatActivity {
         cliente.setEmailCliente(editEmailCli.getText().toString());
         cliente.setTelefoneCliente(editTelefoneCli.getText().toString());
         long id = dao.inserir(cliente);
-        Toast.makeText(this,"Cliente inserido com id: " + id, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Cliente inserido com sucesso", Toast.LENGTH_SHORT).show();
+
+        Intent retornar = new Intent(getApplicationContext(), MenuCadActivity.class);
+        startActivity(retornar);
 
     }
 }

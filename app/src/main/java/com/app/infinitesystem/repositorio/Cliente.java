@@ -4,17 +4,17 @@ import java.io.Serializable;
 
 public class Cliente implements Serializable {
 
-    private Integer id;
+    private Integer idCliente;
     private String nomeCliente;
     private String emailCliente;
     private String telefoneCliente;
 
     public Integer getId() {
-        return id;
+        return idCliente;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.idCliente = id;
     }
 
     public String getNomeCliente() {
@@ -40,12 +40,12 @@ public class Cliente implements Serializable {
     public void setTelefoneCliente(String telefoneCliente) {
         this.telefoneCliente = telefoneCliente;
     }
-/*
+
     @Override
     public String toString(){
-        return nome;
+        return nomeCliente;
     }
 
- */
+
 
 }

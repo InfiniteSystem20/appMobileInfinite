@@ -2,11 +2,15 @@ package com.app.infinitesystem.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.app.infinitesystem.dominio.Conexao;
 import com.app.infinitesystem.repositorio.Cliente;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClienteDAO {
 
@@ -26,7 +30,20 @@ public class ClienteDAO {
         return banco.insert("cliente", null, values);
     }
 
-
+    public List<Cliente> obterTodos(){
+        List<Cliente> clientes = new ArrayList<>();
+        Cursor cursor = banco.query("cliente", new String[]{"id","nomeCliente","emailCliente","telefoneCliente"},
+                null,null,null,null,null);
+        while (cursor.moveToNext()){
+            Cliente cli = new Cliente();
+            cli.setId(cursor.getInt(0));
+            cli.setNomeCliente(cursor.getString(1));
+            cli.setEmailCliente(cursor.getString(2));
+            cli.setTelefoneCliente(cursor.getString(3));
+            clientes.add(cli);
+        }
+        return clientes;
+    }
 
 
 

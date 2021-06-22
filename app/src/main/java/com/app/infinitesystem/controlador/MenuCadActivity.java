@@ -57,12 +57,12 @@ public class MenuCadActivity extends AppCompatActivity {
             }
         });
 
-        //Evento para acessar a Tela de Cad Cliente
+        //Evento para acessar a Tela de Lista Cliente
         btnCadCli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cadastroCliente = new Intent(getApplicationContext(), CadClienteActivity.class);
-                startActivity(cadastroCliente);
+                Intent listaCliente = new Intent(getApplicationContext(), CadClienteActivity.class);
+                startActivity(listaCliente);
             }
         });
 
