@@ -37,4 +37,20 @@ public class ListaClienteActivity extends AppCompatActivity {
         listView.setAdapter(adaptador);
     }
 
+    public boolean onCreateOptionsMenu (Menu menu) {
+        MenuInflater i = getMenuInflater();
+        i.inflate(R.menu.menu_cli, menu);
+
+        return true;
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        clientes = dao.obterTodos();
+        clientesFiltrados.clear();
+        clientesFiltrados.addAll(clientes);
+        listView.invalidateViews();
+    }
+
 }

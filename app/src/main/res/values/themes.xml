@@ -4,7 +4,8 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pretoprincipal</item>
         <item name="colorPrimaryVariant">@color/pretoprincipal</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/verdeprincipal</item>
+        <item name="android:textColor">@color/verdeprincipal</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/verdeescuro</item>
         <item name="colorSecondaryVariant">@color/pretoprincipal</item>
