@@ -26,6 +26,7 @@
         android:layout_marginEnd="36dp"
         android:background="@android:color/transparent"
         android:drawableRight="@drawable/ic_confirmar_24"
+        android:onClick="salvarServ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,6 +59,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTipoServ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Tipo" />
@@ -69,6 +71,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNomeServ"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nome do Serviço" />
@@ -79,6 +82,7 @@
             android:layout_height="120dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDescriServ"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Descrição" />
