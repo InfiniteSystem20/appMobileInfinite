@@ -23,6 +23,10 @@ public class Conexao extends SQLiteOpenHelper {
         db.execSQL("create table servico(idServ integer primary key autoincrement, "
                 +"tipoServ varchar(50), nomeServ varchar(50), descricaoServ varchar(700))");
 
+        db.execSQL("create table consultor(idCons integer primary key autoincrement," +
+                "nomeCons varchar(50), telCons varchar(50), emailCons varchar(50), " +
+                "cargoCons varchar(50), senha varchar(50))");
+
 
     }
 
