@@ -61,7 +61,7 @@ public class MenuCadActivity extends AppCompatActivity {
         btnCadCli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listaCliente = new Intent(getApplicationContext(), CadClienteActivity.class);
+                Intent listaCliente = new Intent(getApplicationContext(), ListaClienteActivity.class);
                 startActivity(listaCliente);
             }
         });
