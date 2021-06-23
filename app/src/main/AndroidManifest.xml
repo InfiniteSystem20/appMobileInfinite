@@ -9,16 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InfiniteSystem">
-        <activity
-            android:name=".controlador.ListaServicoActivity"
+        <!--<activity android:name=".controlador.ListaServicoActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
             android:label="Serviços"
-            android:parentActivityName=".controlador.MainActivity"
-            />
+            android:parentActivityName=".controlador.MainActivity"/>-->
         <activity android:name=".controlador.ListaClienteActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
-            android:label="Clientes"
-            android:parentActivityName=".controlador.MainActivity"/>
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+        android:label="Clientes"
+        android:parentActivityName=".controlador.MainActivity"/>
         <activity android:name=".controlador.CadAgendaActivity" />
         <activity android:name=".controlador.CadAtividadeActivity" />
         <activity android:name=".controlador.CadServicoActivity" />
@@ -27,7 +25,11 @@
         <activity android:name=".controlador.SobreActivity" />
         <activity android:name=".controlador.MainActivity" />
         <activity android:name=".controlador.LoginActivity" />
-        <activity android:name=".controlador.Splash">
+        <!--<activity android:name=".controlador.Splash">-->
+        <activity android:name=".controlador.ListaServicoActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+            android:label="Serviços"
+            android:parentActivityName=".controlador.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
