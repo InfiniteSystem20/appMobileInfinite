@@ -22,7 +22,7 @@ public class ClienteDAO {
         banco = conexao.getWritableDatabase();
     }
 
-    //Inserir
+    //Incluir Cliente
     public long inserir(Cliente cliente) {
         ContentValues values = new ContentValues();
         values.put("nomeCliente", cliente.getNomeCliente());
@@ -31,7 +31,7 @@ public class ClienteDAO {
         return banco.insert("cliente", null, values);
     }
 
-
+    //Array para mostrar como lista
     public List<Cliente> obterTodos(){
         List<Cliente> clientes = new ArrayList<>();
         Cursor cursor = banco.query("cliente", new String[]{"id","nomeCliente","emailCliente","telefoneCliente"},
@@ -46,9 +46,10 @@ public class ClienteDAO {
         }
         return clientes;
     }
-    //Excluir
+
+    //Excluir Cliente
     public void excluirCli(Cliente cliente){
-        banco.delete("aluno","id = ?",new String[]{cliente.getId().toString()});
+        banco.delete("cliente","id = ?",new String[]{cliente.getId().toString()});
     }
 
 
