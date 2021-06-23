@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private Button btnCadCli;
     private Button btnCadServ;
     private Button btnCadCons;
-    private Button btnVoltarMain;
     private Button btnCadAgenda;
     private Button btnCadAtvi;
 
@@ -31,10 +30,9 @@ public class MainActivity extends AppCompatActivity {
         btnCadCli = findViewById(R.id.btnCadCli);
         btnCadCons = findViewById(R.id.btnCadCons);
         btnCadServ = findViewById(R.id.btnCadServ);
-        btnVoltarMain = findViewById(R.id.btnVoltarMain);
         btnCadAgenda = findViewById(R.id.btnCadAgenda);
         btnCadAtvi = findViewById(R.id.btnCadAtvi);
-    /*
+
         //Evento para acessar a Tela de Cad Atividade
         btnCadAtvi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,14 +51,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Evento para voltar para a Main
-        btnVoltarMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent voltarMain = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(voltarMain);
-            }
-        });
 
         //Evento para acessar a Tela de Lista Cliente
         btnCadCli.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-     */
+
 
 
 
