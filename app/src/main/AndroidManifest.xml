@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InfiniteSystem">
         <activity android:name=".controlador.ListaServicoActivity"></activity>
-        <activity android:name=".controlador.MenuConsActivity" />
         <activity android:name=".controlador.ListaClienteActivity" android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
             android:label="Clientes" android:parentActivityName=".controlador.MainActivity"/>
         <activity android:name=".controlador.CadAgendaActivity" />
