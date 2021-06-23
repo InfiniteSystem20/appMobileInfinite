@@ -23,7 +23,7 @@ public class CadAgendaActivity extends AppCompatActivity {
         btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voltarMenu = new Intent( getApplicationContext(), MenuCadActivity.class);
+                Intent voltarMenu = new Intent( getApplicationContext(), MainActivity.class);
                 startActivity(voltarMenu);
             }
         });

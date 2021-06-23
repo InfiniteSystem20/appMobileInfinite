@@ -35,7 +35,7 @@ public class CadServicoActivity extends AppCompatActivity {
         btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voltarMenu = new Intent( getApplicationContext(), MenuCadActivity.class);
+                Intent voltarMenu = new Intent( getApplicationContext(), MainActivity.class);
                 startActivity(voltarMenu);
             }
         });
@@ -49,8 +49,7 @@ public class CadServicoActivity extends AppCompatActivity {
         long idServ = dao.inserir(servico);
         Toast.makeText(getApplicationContext(),"Serviço adicionado com sucesso", Toast.LENGTH_SHORT).show();
 
-        Intent retornar = new Intent(getApplicationContext(), MenuCadActivity.class);
-        startActivity(retornar);
+        finish();
 
     }
 
