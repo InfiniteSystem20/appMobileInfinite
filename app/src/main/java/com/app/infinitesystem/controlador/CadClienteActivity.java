@@ -15,7 +15,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class CadClienteActivity extends AppCompatActivity {
 
-    Button btnVoltarMenuCad;
+    private Button btnVoltarMenuCad;
     private TextInputEditText editNomeCli, editEmailCli, editTelefoneCli;
     private ClienteDAO dao;
 
@@ -35,12 +35,9 @@ public class CadClienteActivity extends AppCompatActivity {
         btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voltarMenu = new Intent( getApplicationContext(), MainActivity.class);
-                startActivity(voltarMenu);
+                finish();
             }
         });
-
-
 
     }
     public void salvarCli (View view){
@@ -51,7 +48,6 @@ public class CadClienteActivity extends AppCompatActivity {
         cliente.setTelefoneCliente(editTelefoneCli.getText().toString());
         long id = dao.inserir(cliente);
         Toast.makeText(this,"Cliente inserido com sucesso", Toast.LENGTH_SHORT).show();
-
         finish();
 
     }
