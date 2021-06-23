@@ -45,6 +45,8 @@ public class ListaServicoActivity extends AppCompatActivity {
         ArrayAdapter<Servico> adaptador = new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_list_item_1, servicosFiltrados);
         listView2.setAdapter(adaptador);
 
+        registerForContextMenu(listView2);//para menu contexto
+
     }
 
     public boolean onCreateOptionsMenu (Menu menu){

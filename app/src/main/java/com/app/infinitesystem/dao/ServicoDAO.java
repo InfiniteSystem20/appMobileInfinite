@@ -49,7 +49,7 @@ public class ServicoDAO {
 
     //Excluir Servico
     public void excluirServ(Servico servico){
-        banco.delete("servico", "id = ?", new String[]{servico.getIdServ().toString()});
+        banco.delete("servico", "idServ = ?", new String[]{servico.getIdServ().toString()});
     }
 
     //Atualizar Servico
@@ -58,7 +58,7 @@ public class ServicoDAO {
         values.put("tipoServ", servico.getTipoServ());
         values.put("nomeServ", servico.getNomeServ());
         values.put("descricaoServ", servico.getDescricaoServ());
-        banco.update("servico",values, "id = ?", new String[]{servico.getIdServ().toString()});
+        banco.update("servico",values, "idServ = ?", new String[]{servico.getIdServ().toString()});
     }
 
 }
