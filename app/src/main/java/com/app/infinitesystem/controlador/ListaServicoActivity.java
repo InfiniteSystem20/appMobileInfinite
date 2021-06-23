@@ -61,6 +61,7 @@ public class ListaServicoActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String s) {
+                procuraServico(s);
                 return false;
             }
         });
@@ -68,7 +69,7 @@ public class ListaServicoActivity extends AppCompatActivity {
     }
 
     //Procurando Serviços
-    public void procuraSerico(String nome){
+    public void procuraServico(String nome){
         servicosFiltrados.clear();
         for(Servico servico: servicos){
             if (servico.getNomeServ().toLowerCase().contains(nome.toLowerCase())){
