@@ -109,7 +109,15 @@ public class ListaClienteActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    //Atualizar Cliente
+    public void atualizarCliente(MenuItem item){
+        AdapterView.AdapterContextMenuInfo menuInfo = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        final Cliente clienteAtualizar = clientesFiltrados.get(menuInfo.position);
+        Intent intent = new Intent(getApplicationContext(), CadClienteActivity.class);
+        intent.putExtra("cliente", clienteAtualizar);
+        startActivity(intent);
 
+    }
 
     //acessando tela cadastrar
     public void cadastrarCli(MenuItem item){

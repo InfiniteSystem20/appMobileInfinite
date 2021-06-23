@@ -18,6 +18,7 @@ public class CadClienteActivity extends AppCompatActivity {
     private Button btnVoltarMenuCad;
     private TextInputEditText editNomeCli, editEmailCli, editTelefoneCli;
     private ClienteDAO dao;
+    private Cliente cliente = null; //atualizar
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,15 @@ public class CadClienteActivity extends AppCompatActivity {
         editTelefoneCli = findViewById(R.id.editTelefoneCli);
         dao = new ClienteDAO(this);
 
+        //Atualizar
+        Intent intent = getIntent();
+        if (intent.hasExtra("cliente")){
+            cliente = (Cliente) intent.getSerializableExtra("cliente");
+            editNomeCli.setText(cliente.getNomeCliente());
+            editEmailCli.setText(cliente.getEmailCliente());
+            editTelefoneCli.setText(cliente.getTelefoneCliente());
+        }
+
 
         btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,13 +52,21 @@ public class CadClienteActivity extends AppCompatActivity {
     }
     public void salvarCli (View view){
 
-        Cliente cliente = new Cliente();
-        cliente.setNomeCliente(editNomeCli.getText().toString());
-        cliente.setEmailCliente(editEmailCli.getText().toString());
-        cliente.setTelefoneCliente(editTelefoneCli.getText().toString());
-        long id = dao.inserir(cliente);
-        Toast.makeText(this,"Cliente inserido com sucesso", Toast.LENGTH_SHORT).show();
-        finish();
-
+        if (cliente == null) {
+            Cliente cliente = new Cliente();
+            cliente.setNomeCliente(editNomeCli.getText().toString());
+            cliente.setEmailCliente(editEmailCli.getText().toString());
+            cliente.setTelefoneCliente(editTelefoneCli.getText().toString());
+            long id = dao.inserir(cliente);
+            Toast.makeText(this, "Cliente inserido com sucesso", Toast.LENGTH_SHORT).show();
+            finish();
+        } else {
+            cliente.setNomeCliente(editNomeCli.getText().toString());
+            cliente.setEmailCliente(editEmailCli.getText().toString());
+            cliente.setTelefoneCliente(editTelefoneCli.getText().toString());
+            dao.atualizarCli(cliente);
+            Toast.makeText(this, "Cliente foi atualizado", Toast.LENGTH_SHORT).show();
+            finish();
+        }
     }
 }
