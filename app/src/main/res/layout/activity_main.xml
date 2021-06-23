@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/btnCadCli"
+            android:id="@+id/btnCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -31,7 +31,7 @@
             android:textColor="@color/verdeprincipal" />
 
         <Button
-            android:id="@+id/btnCadCons"
+            android:id="@+id/btnConsultor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -42,7 +42,7 @@
             android:textColor="@color/verdeprincipal" />
 
         <Button
-            android:id="@+id/btnCadAgenda"
+            android:id="@+id/btnAgenda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
-            android:id="@+id/btnCadServ"
+            android:id="@+id/btnServico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -78,7 +78,7 @@
             android:textColor="@color/verdeprincipal" />
 
         <Button
-            android:id="@+id/btnCadAtvi"
+            android:id="@+id/btnAtivi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -110,18 +110,8 @@
             android:drawableTop="@drawable/ic_home_24"
             android:fontFamily="serif"
             android:text="Home"
-            android:textSize="10sp" />
-
-        <Button
-            android:id="@+id/btnAgenda"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:drawableTop="@drawable/ic_agenda_24"
-            android:fontFamily="serif"
-            android:text="Agenda"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/btnSobre"
@@ -132,7 +122,8 @@
             android:drawableTop="@drawable/ic_info_24"
             android:fontFamily="serif"
             android:text="Sobre"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/btnLocal"
@@ -143,7 +134,8 @@
             android:drawableTop="@drawable/ic_local_24"
             android:fontFamily="serif"
             android:text="Local"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     <TextView
