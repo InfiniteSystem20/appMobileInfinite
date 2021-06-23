@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.app.infinitesystem.ListaServicoActivity;
 import com.app.infinitesystem.R;
 
 public class MenuConsActivity extends AppCompatActivity {

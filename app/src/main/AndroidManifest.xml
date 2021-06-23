@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InfiniteSystem">
-        <activity android:name=".ListaServicoActivity"></activity>
+        <activity android:name=".controlador.ListaServicoActivity"></activity>
         <activity android:name=".controlador.MenuConsActivity" />
         <activity android:name=".controlador.ListaClienteActivity" />
         <activity android:name=".controlador.CadAgendaActivity" />
