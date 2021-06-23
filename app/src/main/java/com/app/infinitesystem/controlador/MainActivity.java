@@ -11,26 +11,82 @@ import com.app.infinitesystem.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonCadastrar;
-    Button btnSobre;
-    private Button btnConsHome;
+
+    private Button btnSobre;
+    private Button btnCadCli;
+    private Button btnCadServ;
+    private Button btnCadCons;
+    private Button btnVoltarMain;
+    private Button btnCadAgenda;
+    private Button btnCadAtvi;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        buttonCadastrar = findViewById(R.id.btnCadHome);
         btnSobre = findViewById(R.id.btnSobre);
-        btnConsHome = findViewById(R.id.btnConsHome);
 
-        //Evento para tela Consultar
-        btnConsHome.setOnClickListener(new View.OnClickListener() {
+        btnCadCli = findViewById(R.id.btnCadCli);
+        btnCadCons = findViewById(R.id.btnCadCons);
+        btnCadServ = findViewById(R.id.btnCadServ);
+        btnVoltarMain = findViewById(R.id.btnVoltarMain);
+        btnCadAgenda = findViewById(R.id.btnCadAgenda);
+        btnCadAtvi = findViewById(R.id.btnCadAtvi);
+    /*
+        //Evento para acessar a Tela de Cad Atividade
+        btnCadAtvi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaConsulta = new Intent(getApplicationContext(), MenuConsActivity.class);
-                startActivity(telaConsulta);
+                Intent cadastroAtividade= new Intent(getApplicationContext(), CadAtividadeActivity.class);
+                startActivity(cadastroAtividade);
+            }
+        });
+
+        //Evento para acessar a Tela de Cad Agenda
+        btnCadAgenda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cadastroAgenda = new Intent(getApplicationContext(), CadAgendaActivity.class);
+                startActivity(cadastroAgenda);
+            }
+        });
+
+        //Evento para voltar para a Main
+        btnVoltarMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent voltarMain = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(voltarMain);
+            }
+        });
+
+        //Evento para acessar a Tela de Lista Cliente
+        btnCadCli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent listaCliente = new Intent(getApplicationContext(), ListaClienteActivity.class);
+                startActivity(listaCliente);
+            }
+        });
+
+        //Evento para acessar a Tela de Cad Consultor
+
+        btnCadCons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cadastroConsultor = new Intent(getApplicationContext(), CadConsultorActivity.class);
+                startActivity(cadastroConsultor);
+            }
+        });
+
+        //Evento para acessar a Tela de Cad Serviço
+        btnCadServ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cadastroServico = new Intent(getApplicationContext(), CadServicoActivity.class);
+                startActivity(cadastroServico);
             }
         });
 
@@ -44,14 +100,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Evento para acessar a Tela de Cadastrar
-        buttonCadastrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent telaCadastrar = new Intent(getApplicationContext(), MenuCadActivity.class);
-                startActivity(telaCadastrar);
-            }
-        });
+     */
+
+
 
 
 
