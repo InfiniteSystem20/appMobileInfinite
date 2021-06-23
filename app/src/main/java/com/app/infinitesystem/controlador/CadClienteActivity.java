@@ -35,7 +35,7 @@ public class CadClienteActivity extends AppCompatActivity {
         btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voltarMenu = new Intent( getApplicationContext(), MenuCadActivity.class);
+                Intent voltarMenu = new Intent( getApplicationContext(), MainActivity.class);
                 startActivity(voltarMenu);
             }
         });
@@ -52,8 +52,7 @@ public class CadClienteActivity extends AppCompatActivity {
         long id = dao.inserir(cliente);
         Toast.makeText(this,"Cliente inserido com sucesso", Toast.LENGTH_SHORT).show();
 
-        Intent retornar = new Intent(getApplicationContext(), MenuCadActivity.class);
-        startActivity(retornar);
+        finish();
 
     }
 }

@@ -18,7 +18,6 @@
         <activity android:name=".controlador.CadServicoActivity" />
         <activity android:name=".controlador.CadConsultorActivity" />
         <activity android:name=".controlador.CadClienteActivity" />
-        <activity android:name=".controlador.MenuCadActivity" />
         <activity android:name=".controlador.SobreActivity" />
         <activity android:name=".controlador.MainActivity" />
         <activity android:name=".controlador.LoginActivity" />
