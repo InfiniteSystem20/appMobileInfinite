@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.app.infinitesystem.R;
 
-public class Menu_Cadastrar extends AppCompatActivity {
+public class MenuCadActivity extends AppCompatActivity {
 
     Button btnCadCli;
     Button btnCadServ;
@@ -34,7 +34,7 @@ public class Menu_Cadastrar extends AppCompatActivity {
         btnCadAtvi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cadastroAtividade= new Intent(getApplicationContext(), cadastro_atividade.class);
+                Intent cadastroAtividade= new Intent(getApplicationContext(), CadAtividadeActivity.class);
                 startActivity(cadastroAtividade);
             }
         });
@@ -43,7 +43,7 @@ public class Menu_Cadastrar extends AppCompatActivity {
         btnCadAgenda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cadastroAgenda = new Intent(getApplicationContext(), cadastro_agenda.class);
+                Intent cadastroAgenda = new Intent(getApplicationContext(), CadAgendaActivity.class);
                 startActivity(cadastroAgenda);
             }
         });
@@ -57,12 +57,12 @@ public class Menu_Cadastrar extends AppCompatActivity {
             }
         });
 
-        //Evento para acessar a Tela de Cad Cliente
+        //Evento para acessar a Tela de Lista Cliente
         btnCadCli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cadastroCliente = new Intent(getApplicationContext(), cadastro_cliente.class);
-                startActivity(cadastroCliente);
+                Intent listaCliente = new Intent(getApplicationContext(), ListaClienteActivity.class);
+                startActivity(listaCliente);
             }
         });
 
@@ -71,7 +71,7 @@ public class Menu_Cadastrar extends AppCompatActivity {
         btnCadCons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cadastroConsultor = new Intent(getApplicationContext(),cadastro_consultor.class);
+                Intent cadastroConsultor = new Intent(getApplicationContext(), CadConsultorActivity.class);
                 startActivity(cadastroConsultor);
             }
         });
@@ -80,7 +80,7 @@ public class Menu_Cadastrar extends AppCompatActivity {
         btnCadServ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cadastroServico = new Intent(getApplicationContext(), cadastro_servico.class);
+                Intent cadastroServico = new Intent(getApplicationContext(), CadServicoActivity.class);
                 startActivity(cadastroServico);
             }
         });

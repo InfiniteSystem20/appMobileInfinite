@@ -9,22 +9,23 @@ import android.widget.Button;
 
 import com.app.infinitesystem.R;
 
-public class cadastro_atividade extends AppCompatActivity {
+public class SobreActivity extends AppCompatActivity {
 
-    Button btnVoltarMenuCad;
+    Button btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_atividade);
+        setContentView(R.layout.activity_sobre);
 
-        btnVoltarMenuCad = findViewById(R.id.btnVoltarMenuCad4);
+        btnHome = findViewById(R.id.btnHome2);
 
-        btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
+        //Evento para acessar tela home
+        btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voltarMenu = new Intent( getApplicationContext(),Menu_Cadastrar.class);
-                startActivity(voltarMenu);
+                Intent telaHome = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(telaHome);
             }
         });
     }

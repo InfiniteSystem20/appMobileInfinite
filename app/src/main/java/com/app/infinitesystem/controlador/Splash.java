@@ -33,7 +33,7 @@ public class Splash extends AppCompatActivity {
 
                 Log.d(TAG, "trocarTela: Esperando o tempo...");
 
-                Intent trocarDeTela = new Intent(Splash.this, Login.class);
+                Intent trocarDeTela = new Intent(Splash.this, LoginActivity.class);
                 startActivity(trocarDeTela);
                 finish();
 

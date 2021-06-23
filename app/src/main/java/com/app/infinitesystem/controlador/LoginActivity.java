@@ -9,24 +9,25 @@ import android.widget.Button;
 
 import com.app.infinitesystem.R;
 
-public class Sobre extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
-    Button btnHome;
+    Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sobre);
+        setContentView(R.layout.activity_login);
 
-        btnHome = findViewById(R.id.btnHome2);
+        btnLogin = findViewById(R.id.btnLogin);
 
-        //Evento para acessar tela home
-        btnHome.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaHome = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(telaHome);
+                Intent telaMenu = new Intent(getApplicationContext(),MainActivity.class);
+               startActivity(telaMenu);
             }
         });
     }
+
+
 }
