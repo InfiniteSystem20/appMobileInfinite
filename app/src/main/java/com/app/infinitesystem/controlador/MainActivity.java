@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btnAgenda = findViewById(R.id.btnAgenda);
         btnAtivi = findViewById(R.id.btnAtivi);
 
+
         //Evento para acessar tela de Agenda
         btnAgenda.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,15 +61,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Evento para acessar Tela de Serviço
-        btnServico.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent telaServico = new Intent(getApplicationContext(), ListaServicoActivity.class);
-                startActivity(telaServico);
-            }
-        });
-
         //Evento para acessar Tela de Cliente
         btnCliente.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,13 +78,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(telaSobre);
             }
         });
-
-
-
-
-
-
-
 
     }
 }

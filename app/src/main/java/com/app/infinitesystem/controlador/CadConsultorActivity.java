@@ -48,7 +48,9 @@ public class CadConsultorActivity extends AppCompatActivity {
         btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 finish();
+
             }
         });
     }

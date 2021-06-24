@@ -46,11 +46,13 @@ public class CadServicoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
              finish();
+
             }
         });
     }
 
     public void salvarServ (View view) {
+
 
         if (servico == null) {
             Servico servico = new Servico();
@@ -68,6 +70,7 @@ public class CadServicoActivity extends AppCompatActivity {
             Toast.makeText(this, "Serviço foi atualizado", Toast.LENGTH_SHORT).show();
             finish();
         }
+
 
     }
 
