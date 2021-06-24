@@ -45,6 +45,7 @@ public class ConsultorDAO {
             consultor.setEmailCons(cursor3.getString(3));
             consultor.setCargoCons(cursor3.getString(4));
             consultor.setSenha(cursor3.getString(5));
+            consultores.add(consultor);
         }
         return consultores;
     }

@@ -32,6 +32,7 @@
         <activity android:name=".controlador.SobreActivity" />
         <activity android:name=".controlador.MainActivity" />
         <activity android:name=".controlador.LoginActivity" />
+
         <!--<activity android:name=".controlador.Splash">-->
         <activity
             android:name=".controlador.ListaConsultorActivity"
