@@ -1,8 +1,10 @@
-package com.app.infinitesystem;
+package com.app.infinitesystem.controlador;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.app.infinitesystem.R;
 
 public class ListaAtividadeActivity extends AppCompatActivity {
 

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InfiniteSystem">
-        <activity android:name=".ListaAtividadeActivity"></activity>
+        <!--<activity
+            android:name=".controlador.ListaAtividadeActivity"
+            android:label="Atividades"
+            android:parentActivityName=".controlador.MainActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>-->
         <activity
             android:name=".controlador.ListaConsultorActivity"
             android:label="Consultores"
@@ -33,7 +37,12 @@
         <activity android:name=".controlador.SobreActivity" />
         <activity android:name=".controlador.MainActivity" />
         <activity android:name=".controlador.LoginActivity" />
-        <activity android:name=".controlador.Splash">
+        <!--<activity android:name=".controlador.Splash"> -->
+        <activity
+            android:name=".controlador.ListaAtividadeActivity"
+            android:label="Atividades"
+            android:parentActivityName=".controlador.MainActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
