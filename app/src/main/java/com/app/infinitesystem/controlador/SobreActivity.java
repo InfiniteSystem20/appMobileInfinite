@@ -11,7 +11,7 @@ import com.app.infinitesystem.R;
 
 public class SobreActivity extends AppCompatActivity {
 
-    Button btnHome;
+    private Button btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +24,7 @@ public class SobreActivity extends AppCompatActivity {
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaHome = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(telaHome);
+                finish();
             }
         });
     }

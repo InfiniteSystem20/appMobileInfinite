@@ -50,7 +50,9 @@ public class ListaAgendaActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu (Menu menu) {
         MenuInflater i = getMenuInflater();
         i.inflate(R.menu.menu_agen, menu);
-        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search_ativ).getActionView();
+
+        //Procurando pela String no botão
+        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search_agen).getActionView();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {

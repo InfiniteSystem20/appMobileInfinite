@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 public class Conexao extends SQLiteOpenHelper {
 
     private static final String name = "infiniteMobile.db";
-    private static final int version = 2;
+    private static final int version = 3;
 
     public Conexao(@Nullable Context context) {
         super(context, name, null, version);
@@ -42,6 +42,8 @@ public class Conexao extends SQLiteOpenHelper {
     db.execSQL("Drop table if exists cliente");
     db.execSQL("Drop table if exists servico");
     db.execSQL("Drop table if exists consultor");
+    db.execSQL("Drop table if exists agenda");
+    db.execSQL("Drop table if exists atividade");
 
     onCreate(db);
 

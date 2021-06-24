@@ -33,6 +33,24 @@ public class MainActivity extends AppCompatActivity {
         btnAgenda = findViewById(R.id.btnAgenda);
         btnAtivi = findViewById(R.id.btnAtivi);
 
+        //Evento para acessar tela de Agenda
+        btnAgenda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent telaAgenda = new Intent(getApplicationContext(), ListaAgendaActivity.class);
+                startActivity(telaAgenda);
+            }
+        });
+
+        //Evento para acessar tela de Atividade
+        btnAtivi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent telaAtividade = new Intent(getApplicationContext(), ListaAtividadeActivity.class);
+                startActivity(telaAtividade);
+            }
+        });
+
         //Evento para acessar Tela de Consultor
         btnConsultor.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -63,7 +63,7 @@ public class AtividadeDAO {
         values.put("nomeAtivCons", atividade.getNomeAtivCons());
         values.put("nomeAtivCli", atividade.getNomeAtivCli());
         values.put("descriAtiv", atividade.getDescriAtiv());
-        banco.update("atividade", values, "idServ = ?", new String[]{atividade.getIdAtiv().toString()});
+        banco.update("atividade", values, "idAtiv = ?", new String[]{atividade.getIdAtiv().toString()});
     }
 
 }
