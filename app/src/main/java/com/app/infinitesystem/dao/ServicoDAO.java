@@ -21,6 +21,7 @@ public class ServicoDAO {
         banco = conexao.getWritableDatabase();
     }
 
+    //Incluir Serviços
     public long inserir(Servico servico) {
         ContentValues values = new ContentValues();
         values.put("tipoServ", servico.getTipoServ());
@@ -45,4 +46,19 @@ public class ServicoDAO {
         return servicos;
 
     }
+
+    //Excluir Servico
+    public void excluirServ(Servico servico){
+        banco.delete("servico", "idServ = ?", new String[]{servico.getIdServ().toString()});
+    }
+
+    //Atualizar Servico
+    public void atualizarServ(Servico servico){
+        ContentValues values = new ContentValues();
+        values.put("tipoServ", servico.getTipoServ());
+        values.put("nomeServ", servico.getNomeServ());
+        values.put("descricaoServ", servico.getDescricaoServ());
+        banco.update("servico",values, "idServ = ?", new String[]{servico.getIdServ().toString()});
+    }
+
 }

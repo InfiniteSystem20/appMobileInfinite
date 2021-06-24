@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_adc_24"
+        android:title="Cadastrar"
+        app:showAsAction="ifRoom" android:onClick="cadastrarAtivi" />
+    <item
+        android:id="@+id/app_bar_search_ativ"
+        android:icon="@drawable/ic_pesq_24"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>

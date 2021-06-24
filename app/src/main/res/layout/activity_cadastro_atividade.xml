@@ -26,6 +26,7 @@
         android:layout_marginEnd="36dp"
         android:background="@android:color/transparent"
         android:drawableRight="@drawable/ic_confirmar_24"
+        android:onClick="salvarAtiv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,6 +59,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDataIni"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Data Início" />
@@ -68,6 +70,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDataFim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Data Fim" />
@@ -78,6 +81,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNomeAtivCons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Consultor" />
@@ -88,6 +92,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNomeAtivCli"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Cliente" />
@@ -98,6 +103,7 @@
             android:layout_height="120dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDescriAtiv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Descrição" />

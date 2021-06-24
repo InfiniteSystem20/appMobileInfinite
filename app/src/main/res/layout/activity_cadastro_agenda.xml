@@ -26,6 +26,7 @@
         android:layout_marginEnd="36dp"
         android:background="@android:color/transparent"
         android:drawableRight="@drawable/ic_confirmar_24"
+        android:onClick="salverAgen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,6 +59,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDataAgen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Data" />
@@ -68,6 +70,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNomeAgenCli"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Cliente" />
@@ -78,6 +81,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editLocalAgen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Local" />
@@ -88,6 +92,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNomeAgenCons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Consultor" />
@@ -98,6 +103,7 @@
             android:layout_height="175dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDescriAgen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Descrição" />
