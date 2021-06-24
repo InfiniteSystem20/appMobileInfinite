@@ -28,11 +28,11 @@ public class Conexao extends SQLiteOpenHelper {
                 "nomeCons varchar(100), telCons varchar(50), emailCons varchar(50), cargoCons varchar(50), senha varchar(50))");
 
         db.execSQL("create table agenda(idAgen integer primary key autoincrement, " +
-                "dataAgen varchar(20), nomeAgenCli varchar(100), localAgen varchar(100), " +
+                "dataAgen varchar(11), nomeAgenCli varchar(100), localAgen varchar(100), " +
                 "nomeAgenCons varchar(100), descriAgen varchar(700))");
 
         db.execSQL("create table atividade(idAtiv integer primary key autoincrement, " +
-                "dataIni varchar(20), dataFim varchar(20), nomeAtivCons varchar(100), " +
+                "dataIni varchar(11), dataFim varchar(11), nomeAtivCons varchar(100), " +
                 "nomeAtivCli varchar(100), descriAtiv varchar(700))");
 
     }
