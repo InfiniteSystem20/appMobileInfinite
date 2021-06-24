@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InfiniteSystem">
         <!--<activity
+            android:name=".controlador.ListaAgendaActivity"
+            android:label="Agenda"
+            android:parentActivityName=".controlador.MainActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>-->
+        <activity
             android:name=".controlador.ListaAtividadeActivity"
             android:label="Atividades"
             android:parentActivityName=".controlador.MainActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>-->
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
         <activity
             android:name=".controlador.ListaConsultorActivity"
             android:label="Consultores"
@@ -37,10 +42,10 @@
         <activity android:name=".controlador.SobreActivity" />
         <activity android:name=".controlador.MainActivity" />
         <activity android:name=".controlador.LoginActivity" />
-        <!--<activity android:name=".controlador.Splash"> -->
+        <!-- <activity android:name=".controlador.Splash"> -->
         <activity
-            android:name=".controlador.ListaAtividadeActivity"
-            android:label="Atividades"
+            android:name=".controlador.ListaAgendaActivity"
+            android:label="Agenda"
             android:parentActivityName=".controlador.MainActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
             <intent-filter>
