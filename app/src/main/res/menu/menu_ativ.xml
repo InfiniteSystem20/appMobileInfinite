@@ -6,7 +6,7 @@
         android:title="Cadastrar"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/app_bar_search"
+        android:id="@+id/app_bar_search_ativ"
         android:icon="@drawable/ic_pesq_24"
         android:title="Search"
         app:actionViewClass="android.widget.SearchView"
