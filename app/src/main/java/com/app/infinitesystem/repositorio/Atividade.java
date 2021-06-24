@@ -1,6 +1,8 @@
 package com.app.infinitesystem.repositorio;
 
-public class Atividade {
+import java.io.Serializable;
+
+public class Atividade implements Serializable {
 
     private Integer idAtiv;
     private String dataIni;
