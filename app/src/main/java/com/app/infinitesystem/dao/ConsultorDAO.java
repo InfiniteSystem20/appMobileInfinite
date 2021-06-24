@@ -34,17 +34,17 @@ public class ConsultorDAO {
 
     public List<Consultor> obterTodosConsultores(){
         List<Consultor> consultores = new ArrayList<>();
-        Cursor cursor = banco.query("consultor", new String[]{"idCons","nomeCons",
+        Cursor cursor3 = banco.query("consultor", new String[]{"idCons","nomeCons",
         "telCons", "emailCons", "cargoCons", "senha"}, null,null,null,
                 null,null);
-        while (cursor.moveToNext()){
+        while (cursor3.moveToNext()){
             Consultor consultor = new Consultor();
-            consultor.setIdCons(cursor.getInt(0));
-            consultor.setNomeCons(cursor.getString(1));
-            consultor.setTelCons(cursor.getString(2));
-            consultor.setEmailCons(cursor.getString(3));
-            consultor.setCargoCons(cursor.getString(4));
-            consultor.setSenha(cursor.getString(5));
+            consultor.setIdCons(cursor3.getInt(0));
+            consultor.setNomeCons(cursor3.getString(1));
+            consultor.setTelCons(cursor3.getString(2));
+            consultor.setEmailCons(cursor3.getString(3));
+            consultor.setCargoCons(cursor3.getString(4));
+            consultor.setSenha(cursor3.getString(5));
         }
         return consultores;
     }

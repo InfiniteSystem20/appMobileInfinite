@@ -26,7 +26,7 @@ import java.util.List;
 
 public class ListaConsultorActivity extends AppCompatActivity {
 
-    private ListView listView;
+    private ListView listView3;
     private ConsultorDAO dao;
     private List<Consultor> consultores;
     private List<Consultor> consultoresFiltrados = new ArrayList<>();
@@ -36,15 +36,15 @@ public class ListaConsultorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_consultor);
 
-        listView = findViewById(R.id.lista_consultor);
+        listView3 = findViewById(R.id.lista_consultor);
         dao = new ConsultorDAO(getApplicationContext());
         consultores = dao.obterTodosConsultores();
         consultoresFiltrados.addAll(consultores);
         ArrayAdapter<Consultor> adaptador = new ArrayAdapter<>(getApplicationContext(),
                 android.R.layout.simple_list_item_1, consultoresFiltrados);
-        listView.setAdapter(adaptador);
+        listView3.setAdapter(adaptador);
 
-        registerForContextMenu(listView); //para menu contexto
+        registerForContextMenu(listView3); //para menu contexto
 
     }
 
@@ -76,7 +76,7 @@ public class ListaConsultorActivity extends AppCompatActivity {
                 consultoresFiltrados.add(consultor);
             }
         }
-        listView.invalidateViews();
+        listView3.invalidateViews();
     }
 
     //Menu Contexto Consultor
@@ -100,7 +100,7 @@ public class ListaConsultorActivity extends AppCompatActivity {
                         consultoresFiltrados.remove(consultorExcluir);
                         consultores.remove(consultorExcluir);
                         dao.excluirCons(consultorExcluir);
-                        listView.invalidateViews();
+                        listView3.invalidateViews();
                     }
                 }).create();
         dialog.show();
@@ -127,7 +127,7 @@ public class ListaConsultorActivity extends AppCompatActivity {
         consultores = dao.obterTodosConsultores();
         consultoresFiltrados.clear();
         consultoresFiltrados.addAll(consultores);
-        listView.invalidateViews();
+        listView3.invalidateViews();
     }
 
 }
