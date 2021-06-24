@@ -15,7 +15,7 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class CadServicoActivity extends AppCompatActivity {
 
-    Button btnVoltarMenuCad;
+    private Button btnVoltarMenuCad;
     private TextInputEditText editTipoServ,editNomeServ,editDescriServ;
     private ServicoDAO dao;
     private Servico servico = null; //atualizar
