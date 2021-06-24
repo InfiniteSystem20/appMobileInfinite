@@ -19,14 +19,21 @@ public class Conexao extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL("create table cliente(id integer primary key autoincrement, "
-                + "nomeCliente varchar(50), emailCliente varchar(50), telefoneCliente varchar(50))");
+                + "nomeCliente varchar(100), emailCliente varchar(50), telefoneCliente varchar(50))");
 
         db.execSQL("create table servico(idServ integer primary key autoincrement, "
-                +"tipoServ varchar(50), nomeServ varchar(50), descricaoServ varchar(700))");
+                +"tipoServ varchar(50), nomeServ varchar(100), descricaoServ varchar(700))");
 
-        db.execSQL("create table if not exists consultor(idCons integer primary key autoincrement, " +
-                "nomeCons varchar(50), telCons varchar(50), emailCons varchar(50), cargoCons varchar(50), senha varchar(50))");
+        db.execSQL("create table consultor(idCons integer primary key autoincrement, " +
+                "nomeCons varchar(100), telCons varchar(50), emailCons varchar(50), cargoCons varchar(50), senha varchar(50))");
 
+        db.execSQL("create table agenda(idAgen integer primary key autoincrement, " +
+                "dataAgen varchar(20), nomeAgenCli varchar(100), localAgen varchar(100), " +
+                "nomeAgenCons varchar(100), descriAgen varchar(700))");
+
+        db.execSQL("create table atividade(idAtiv integer primary key autoincrement, " +
+                "dataIni varchar(20), dataFim varchar(20), nomeAtivCons varchar(100), " +
+                "nomeAtivCli varchar(100), descriAtiv varchar(700))");
 
     }
 
