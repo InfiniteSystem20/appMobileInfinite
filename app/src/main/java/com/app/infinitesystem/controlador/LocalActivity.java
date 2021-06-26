@@ -9,20 +9,19 @@ import android.widget.Button;
 
 import com.app.infinitesystem.R;
 
-public class SobreActivity extends AppCompatActivity {
+public class LocalActivity extends AppCompatActivity {
 
     private Button btnHome;
-    private Button btnLocal;
+    private Button btnSobre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sobre);
+        setContentView(R.layout.activity_local);
 
-        btnHome = findViewById(R.id.btnHome2);
-        btnLocal = findViewById(R.id.btnLocal2);
+        btnHome = findViewById(R.id.btnHome3);
+        btnSobre = findViewById(R.id.btnSobre3);
 
-        //Evento para acessar tela home
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,12 +30,13 @@ public class SobreActivity extends AppCompatActivity {
             }
         });
 
-        btnLocal.setOnClickListener(new View.OnClickListener() {
+        btnSobre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent telaLocal = new Intent(getApplicationContext(), LocalActivity.class);
-                startActivity(telaLocal);
+                Intent telaSobre = new Intent(getApplicationContext(), SobreActivity.class);
+                startActivity(telaSobre);
             }
         });
+
     }
 }
