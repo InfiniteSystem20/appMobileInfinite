@@ -35,6 +35,8 @@ public class Conexao extends SQLiteOpenHelper {
                 "dataIni varchar(11), dataFim varchar(11), nomeAtivCons varchar(100), " +
                 "nomeAtivCli varchar(100), descriAtiv varchar(700))");
 
+
+
     }
 
     @Override

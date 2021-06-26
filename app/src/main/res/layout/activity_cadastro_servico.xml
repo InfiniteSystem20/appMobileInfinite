@@ -66,6 +66,10 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -76,6 +80,10 @@
                 android:layout_height="wrap_content"
                 android:hint="Nome do Serviço" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

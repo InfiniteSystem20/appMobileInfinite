@@ -35,14 +35,13 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:fontFamily="serif"
         android:text="CADASTRAR CONSULTOR"
         android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVoltarMenuCad2" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -64,7 +63,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nome Completo" />
+
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -77,6 +81,10 @@
                 android:hint="Telefone" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -87,6 +95,10 @@
                 android:layout_height="wrap_content"
                 android:hint="Email" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -99,6 +111,10 @@
                 android:hint="Cargo" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -109,6 +125,10 @@
                 android:layout_height="wrap_content"
                 android:hint="Senha" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

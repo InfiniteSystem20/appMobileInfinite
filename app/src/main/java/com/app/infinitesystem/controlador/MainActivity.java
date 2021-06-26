@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnConsultor;
     private Button btnAgenda;
     private Button btnAtivi;
+    private Button btnLocal;
 
 
     @Override
@@ -32,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
         btnServico = findViewById(R.id.btnServico);
         btnAgenda = findViewById(R.id.btnAgenda);
         btnAtivi = findViewById(R.id.btnAtivi);
+        btnLocal = findViewById(R.id.btnLocal);
+
+        btnLocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent telaLocal = new Intent(getApplicationContext(), LocalActivity.class);
+                startActivity(telaLocal);
+            }
+        });
 
 
         //Evento para acessar tela de Agenda

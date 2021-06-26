@@ -2,25 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnHom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controlador.SobreActivity"
     android:background="@drawable/bg_linear_padrao"
-    >
+    tools:context=".controlador.LocalActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="410dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/black">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/btnHome2"
+            android:id="@+id/btnHome3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -32,7 +31,7 @@
             android:textSize="10sp" />
 
         <Button
-            android:id="@+id/btnSobre2"
+            android:id="@+id/btnSobre3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -44,7 +43,7 @@
             android:textSize="10sp" />
 
         <Button
-            android:id="@+id/btnLocal2"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -56,73 +55,37 @@
             android:textSize="10sp" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginEnd="178dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="serif"
-        android:text="Versão 1.0"
-        android:textColor="@color/verdesecundario"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Infinite System"
-            android:textAlignment="center"
-            android:textSize="24sp" />
-
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
             android:layout_height="250dp"
-            app:srcCompat="@drawable/logo" />
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mapabasilides" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fundação: 01/10/2020 na Etec Basilides de Godoy"
+            android:text="Rua Guaipa, 678, São Paulo"
             android:textAlignment="center" />
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CNPJ: 79.924.407/0001-65"
-            android:textAlignment="center" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Telefone: (11) 912345678"
-            android:textAlignment="center" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Email: infinitesystemme@gmail.com"
-            android:textAlignment="center" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
