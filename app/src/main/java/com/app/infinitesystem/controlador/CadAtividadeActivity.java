@@ -48,8 +48,8 @@ public class CadAtividadeActivity extends AppCompatActivity {
 
         btnVoltarMenuCad.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                finish();
+            public void onClick(View view) {    finish();
+
             }
         });
     }

@@ -8,12 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.InfiniteSystem"
         android:screenOrientation="portrait">
-
-        
         <activity android:name=".controlador.LocalActivity"/>
-        <activity
+
+      <activity
+
             android:name=".controlador.ListaAgendaActivity"
             android:label="Agenda"
             android:parentActivityName=".controlador.MainActivity"
