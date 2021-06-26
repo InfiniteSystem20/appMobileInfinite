@@ -62,8 +62,13 @@
                 android:id="@+id/editDataAgen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Data" />
+                android:hint="Data"
+                android:inputType="date" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -73,8 +78,14 @@
                 android:id="@+id/editNomeAgenCli"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cliente" />
+                android:hint="Nome do Cliente"
+                android:inputType="textPersonName" />
+
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -84,8 +95,13 @@
                 android:id="@+id/editLocalAgen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Local" />
+                android:hint="Local"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -95,8 +111,13 @@
                 android:id="@+id/editNomeAgenCons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Consultor" />
+                android:hint="Nome do Consultor"
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -106,7 +127,8 @@
                 android:id="@+id/editDescriAgen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Descrição" />
+                android:hint="Descrição"
+                android:inputType="textLongMessage" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
